@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+        <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<html>
+<body>
+       <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                Fin's Limited Store
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                 <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                   <li><a href="#">products</a></li>
+                    <li><a href="#">contact</a></li>
+            </ul>
+
+            <div class="order-btn">
+                <button class="btn" type="submit"><a href="order online.html" title="click here to view service">View services</a>
+            </div>
+
+
+            </div>
+
+            <div class="menu-btn" id="menubtn" title="click here to open menu">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-----------dropdown menu--------->
+    <div>
+           <ul class="nav-dropdown" id="dropdown">
+                <li><a class="B" href="index.html">Home</a></li>
+                 <li><a class="B" href="#">About</a></li>
+                  <li><a class="B" href="#">Services</a></li>
+                   <li><a class="B" href="#">products</a></li>
+                    <li><a class="B" href="#">contact</a></li>
+                   <li><button type="submit" ><a href="https://wa.me/2349045803384?text=Hello%2C%20Are%20you%20guys%20available%20for%20services%3F%3F">Order on WhatsApp</a></button></li>
+    </div>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn');
+        const menubtnicon = document.querySelector('.menu-btn i');
+        const dropdown = document.querySelector('.nav-dropdown');
+        
+        menubtn.addEventListener('click', function () {
+
+            dropdown.classList.toggle('open');
+
+            const isOpen = dropdown.classList.contains('open');
+
+            menubtnicon.className = isOpen
+            ?'bx bx-x'
+            : 'bx bx-menu'
+
+            document.addEventListener("click", function (event) {
+
+    if (!dropdown.contains(event.target) &&
+        !menubtn.contains(event.target)) {
+
+        dropdown.classList.remove('open');
+        menubtnicon.className = 'bx bx-menu';
+
+    }
+
+});
+        });
+        </script>
+
+
+
+        <!------------order page---------->
+        <div class="order-on">
+        <h1>Order Online</h1><hr>
+        </div>
+        <div class="drinks">
+            <h1>Drinks🥤 Section</h1>
+        </div>
+        <p class="note">Select your items below and place your order quickly<br>
+        through whatsApp</p>
+        <div class="item-chart">
+          <div class="PB">
+          <img class="imgpb" src="images/photo_1_2026-04-20_16-50-16.jpg" width="100" height="70">
+          <p class="pb">Fanta<br>
+            ₦500<br><hr>
+        <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Fanta%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+            </div>
+
+            <div class="PB">
+         <img class="imgpb"   src="images/photo_2_2026-04-20_16-50-16.jpg" width="100" height="70">
+          <p class="pb">Bottle Water<br>
+            ₦250<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Fanta%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+            </div>
+
+            <div class="PB">
+          <img class="imgpb"   src="images/photo_3_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pb">Pet Malt<br>
+            ₦600<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Fanta%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+        </div>
+
+
+       <div class="item-charttwo">
+          <div class="PA">
+          <img class="imgpa" src="images/photo_21_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pa">Coke<br>
+            ₦500<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Coke%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+          <div class="PA">
+          <img class="imgpa"   src="images/photo_20_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pa">Pepsi<br>
+            ₦500<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Pepsi%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+          <div class="PA">
+          <img class="imgpa"   src="images/photo_19_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pa">Sprite<br>
+            ₦500<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Sprite%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+       </div>
+
+
+         <div class="item-chartthree">
+          <div class="PE">
+          <img class="imgpe"   src="images/photo_5_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pe">Chi Active<br>
+            ₦900<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Chi Active%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+          <div class="PE">
+          <img class="imgpe"   src="images/photo_6_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pe">Fayrouz<br>
+            ₦800<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Fayrouz%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+           <div class="PE">
+          <img class="imgpe"   src="images/photo_7_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pe">Schweppes<br>
+            ₦600<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Schwepps%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+        </div>
+
+
+           <div class="item-chartfour">
+          <div class="PG">
+          <img class="imgpg"   src="images/photo_8_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pg">Chi Exotic<br>
+            ₦900<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Chi Exotic%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+          <div class="PG">
+          <img class="imgpg"   src="images/photo_9_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pg">Viju Chocolate<br>
+            ₦1,200<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Viju Chocolate%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+          <div class="PG">
+          <img class="imgpg"   src="images/photo_10_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pg">Viju Milk<br>
+            ₦700<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Viju Milk%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+           </div>
+
+
+           <div class="item-chartfive">
+          <div class="PH">
+          <img class="imgph"   src="images/photo_11_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="ph">Viju Wheat<br>
+            ₦1,200<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Viju Wheat%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+           <div class="PH">
+          <img class="imgph"   src="images/photo_12_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="ph">Viju Yoghurt<br>
+            ₦700<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Viju Yoghurt%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+          <div class="PH">
+          <img class="imgph"   src="images/photo_13_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="ph">Nutri Milk<br>
+            ₦700<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Nutri Milk%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+           </div>
+
+
+           <div class="item-chartsix">
+          <div class="PJ">
+          <img class="imgpj"   src="images/photo_14_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pj">Nutri Choco<br>
+            ₦1,000<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Nutri Choco%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+          <div class="PJ">
+          <img class="imgpj"   src="images/photo_15_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pj">Big Komando<br>
+            ₦600<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Big Komando%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+          <div class="PJ">
+          <img class="imgpj"   src="images/photo_16_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pj">Small Koamando<br>
+            ₦400<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Small Komando%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div> 
+           </div>
+
+
+            <div class="item-chartseven">
+           <div class="PK">
+          <img class="imgpk"   src="images/photo_17_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pk">Fearless<br>
+            ₦600<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Fearless%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+
+          <div class="PK">
+          <img class="imgpk"  src="images/photo_18_2026-04-20_16-50-16.jpg" width="100" height="70">
+           <p class="pk">Predator<br>
+            ₦600<br><hr>
+           <a href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20order%20Fanta%20drinks%20from%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Order</a></p>
+          </div>
+            </div>
+        </div>
+
+        </div><hr>
+        <br><br><br>
+
+
+          
+ <!------------order page charge---------->
+         <div class="drinks">
+         <h1>Charging📱 Section</h1>
+         </div>
+         <div class="chsec">
+          <img class="imgchsec" src="images/phones.png" width="400" height="300">
+          <p class="pch">Charge your phones at cheaper price<br>at the rate of<br>
+            ₦150 per phone<br></p><br><hr>
+        <a class="cha" href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20book%20a%20Phone%20charging%20slot%20at%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Book a port now</a>
+            </div>
+
+
+
+             <div class="chsec">
+          <img class="imgchsec" src="images/powerbank.png" width="300" height="300">
+          <p class="pch">Charge your Powerbanks at cheaper price<br>at the rate of<br>
+            ₦150 per phone<br></p><br><hr>
+        <a class="cha" href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20book%20a%20Power%20bank%20charging%20slot%20at%20Fin%E2%80%99s%20Limited%20Store." title="click here to chat on whatsApp">Book a port now</a>
+            </div><hr>
+            <br><br><br>
+
+
+
+
+
+
+            <!------------game page charge---------->
+         <div class="drinks">
+         <h1>Gaming🎮 Section</h1>
+         </div>
+         <div class="chsec">
+          <img class="imgchsec" src="images/game.png" width="400" height="450">
+          <p class="pch">Book a gaming session and enjoy a comfortable entertainment experience, play any game of your choice <br>as low as<br>
+            ₦100 per person<br></p><br><hr>
+        <a class="cha" href="https://wa.me/2349045803384?text=Hello%2C%20I%20would%20like%20to%20book%20a%20gaming%20session%20at%20Fin%E2%80%99s%20Limited%20Store.%20Please%20let%20me%20know%20the%20available%20time%20slots.">Book a session now</a>
+            </div><hr><br>
+            
+
+            <div class="drinks">
+           <h1>Availability Notice:</h1>
+            </div>
+            <p class="pch">Please note that drink availability, charging space, and gaming session slots may change during the day depending on customer demand and stock levels. To avoid inconvenience and ensure faster service, kindly confirm availability through WhatsApp before visiting Fin’s Limited Store.</p>
+
+
+             <div class="drinks">
+           <h1>Order Pickup📦:</h1>
+            </div>
+            <p class="pch">All orders are prepared for quick and convenient pickup at Fin’s Limited Store. To ensure your order is ready on time and to avoid delays, please confirm your arrival time through WhatsApp when placing your order.</p>
+             
+
+
+            <div class="support">
+                <h3>Contact support:</h3>
+            </div>
+            <p class="pch">Need help placing your order?<br>Contact us directly on WhatsApp</p>
+              <div class="emoji">   
+              👇
+              </div> 
+
+
+
+           <div class="apps">
+                <a class="appsa"  href="https://wa.me/2349045803384" title="click here to chat on whatsApp">
+                    <img class="imgA" src="images/app.png" width="100" height="100">
+                </a>
+
+                <footer class="footer-bottom">
+          <div class="foot-head">
+        <h5 class="foot-head">Fin's Limited Store</h5>
+        </div>
+
+        <ul class="foot-list">
+            <li>Reliable Service</li>
+            <li>Affordable Prices</li>
+            <li>Everyday Convenience</li>
+           </ul>
+
+           <p class="footp">We provide cold drinks, phone charging services, power bank charging support, and gaming entertainment in a comfortable and customer-friendly environment.</p>
+         <br><br>
+        <div class="foot-head">
+            <h5 class="foot-head">Quick Links</h5>
+        </div>
+
+        <ul class="foot-lists">
+                <li><a class="B" href="index.html">Home</a></li>|
+                 <li><a class="B" href="About.html">About</a></li>|
+                  <li><a class="B" href="Service.html">Services</a></li>|
+                    <li><a class="B" href="Contact.html">Contact</a></li>|
+                   <li><a href="https://wa.me/2349045803384">Order on WhatsApp</a></li>
+            </ul>
+       <br>
+       <br>
+
+       <div class="foot-head">
+        <h5 class="foot-head">Customer Support</h5>
+       </div>
+       <p class="footp">For orders, product availability, charging service enquiries, and gaming session bookings, please contact us on WhatsApp. Our support team is available to assist you with confirming availability, preparing your order for pickup, and providing any information you may need before visiting Fin’s Limited Store.</p>
+       <br>
+       <br>
+       <div class="foot-head">
+        <h5 class="foot-head">Store Hours</h5>
+       </div>
+
+         <ul class="time">
+       <li>Monday-Friday: 8am-7pm</li>
+       <li>Saturday: Closed</li>
+       <li>Sunday: Closed</li>
+         </ul>
+        <br>
+        <br>
+         <div class="foot-head">
+        <h5 class="foot-head">Availability Notice</h5>
+         <p class="footp">Product availability, charging space, and gaming session slots may vary during the day. Please confirm availability through WhatsApp before visiting.</p>
+
+       <div class="down-foot">
+      <p class="downp">@Copy 2026 Fin’s Limited Store. All rights reserved.</p>
+        </footer>
+        </body>
+</html>

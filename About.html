@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                Fin's Limited Store
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                 <li><a href="About.html">About</a></li>
+                  <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html">contact</a></li>
+            </ul>
+
+            <div class="order-btn">
+                <button class="btn" type="submit"><a href="order online.html" title="click here to place an order">Order Online</a></button>
+            </div>
+
+            <div class="menu-btn" id="menubtn" title="click here to open menu">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+
+          <!-----------dropdown menu--------->
+    <div>
+           <ul class="nav-dropdown" id="dropdown">
+                <li><a class="B" href="index.html">Home</a></li>
+                 <li><a class="B" href="About.html">About</a></li>
+                  <li><a class="B" href="Service.html">Services</a></li>
+                    <li><a class="B" href="Contact.html">Contact</a></li>
+                   <li><button type="submit" ><a href="https://wa.me/2349045803384">Order on WhatsApp</a></button></li>
+            </ul>
+    </div>
+
+          <div class="drinks">
+        <h1>About Fin's Limited Store</h1>
+        </div>
+
+        <ul class="list">
+            <li>Reliable Service</li>
+            <li>Affordable Prices</li>
+            <li>Everyday Convenience</li>
+           </ul>
+           
+         <div class="home-img">
+         <img class="A" src="images/shop pic.png" width="460" height="300">
+         </div>
+
+
+         <div class="note">
+           <p class="note"> <b>Fin's Limited Store</b> was established in June 2024 with a clear mission to provide the students
+         of <b>Oyo State College of Technology</b>{OYSCATECH} with premium essential services. Founded and led by our
+          CEO, <b>Nasiru Fridaous Oladimeji</b> (born in year 2002), the company was born out of a need to solve
+           the persistent electricity challenges in Pako Tuntun community of Igbo-Ora, OYO.
+    </p>
+    <p class="note">
+       <b>Fin’s Limited Store</b> is a neighborhood convenience and service store dedicated to providing refreshing beverages, reliable phone charging services, and enjoyable gaming entertainment in a comfortable and customer-friendly environment.
+
+Our goal is to make everyday services simple, fast, and accessible for students, workers, and residents in our community. We focus on delivering quality service with convenience and customer satisfaction as our top priority.
+    </p>
+         </div><hr>
+
+
+         <div class="services">
+            <div class="drinks">
+     <h1>What We Offer</h1>
+            </div>
+    <ul class="offer">
+        <li>Cold soft drinks and refreshing beverages 🥤</li>
+        <li>Fast and reliable phone charging services 📱</li>
+        <li>Power bank charging support 🔋</li>
+        <li>Comfortable gaming entertainment sessions 🎮</li>
+    </ul>
+         </div>
+<br>
+    <p class="note">
+          Our services are designed to give customers a convenient place to relax, recharge their devices, and enjoy quality refreshments anytime during the day.
+    </p>
+         </div><hr>
+
+      <div>
+       <div class="drinks">
+       <h1>Our Mission</h1>
+       </div>
+        <p class="note">Our mission is to provide dependable everyday services at affordable prices while creating a welcoming space where customers feel comfortable and valued.
+
+           We are committed to maintaining reliable service standards and ensuring every visit to Fin’s Limited Store is simple, fast, and enjoyable.</p>
+      </div><hr>
+
+      <div class="services">
+       <div class="drinks">
+    <h1>Why Customers Choose Fin’s Limited Store</h2>
+       </div>
+
+    <p class="trust">
+        Customers trust Fin’s Limited Store because we offer:
+    </p>
+
+    <ul class="offer">
+        <li>Quick and reliable charging services ⚡</li>
+        <li>Affordable beverage options 🥤</li>
+        <li>Comfortable gaming experience 🎮</li>
+        <li>Friendly and helpful customer support 🤝</li>
+        <li>Convenient and accessible location 📍</li>
+    </ul>
+<br>
+    <p class="note">
+        We continuously work to improve our services and provide the best experience possible for every customer.
+    </p>
+      </div><hr>
+
+
+      <div>
+        <div class="drinks">
+       <h1>Our Commitment To Customers</h1>
+        </div>
+         
+        <div>
+        <p class="note">At Fin’s Limited Store, customer satisfaction is our priority. We aim to provide consistent service quality, maintain product availability, and ensure a smooth and convenient experience for everyone who visits our store.</p>
+        </div><hr>
+
+          <div>
+        <div class="drinks">
+       <h1>Visit Us Today</h1>
+        </div>
+
+          <p class="note">Whether you want to charge your phone, enjoy a cold drink, or relax with a gaming session, Fin’s Limited Store is always ready to serve you.
+            We look forward to welcoming you.</p>
+      </div>
+
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn');
+        const menubtnicon = document.querySelector('.menu-btn i');
+        const dropdown = document.querySelector('.nav-dropdown');
+        
+        menubtn.addEventListener('click', function () {
+
+            dropdown.classList.toggle('open');
+
+            const isOpen = dropdown.classList.contains('open');
+
+            menubtnicon.className = isOpen
+            ?'bx bx-x'
+            : 'bx bx-menu'
+
+            document.addEventListener("click", function (event) {
+
+    if (!dropdown.contains(event.target) &&
+        !menubtn.contains(event.target)) {
+
+        dropdown.classList.remove('open');
+        menubtnicon.className = 'bx bx-menu';
+
+    }
+
+});
+        });
+    
+
+       </script>
+
+       <footer class="footer-bottom">
+          <div class="foot-head">
+        <h5 class="foot-head">Fin's Limited Store</h5>
+        </div>
+
+        <ul class="foot-list">
+            <li>Reliable Service</li>
+            <li>Affordable Prices</li>
+            <li>Everyday Convenience</li>
+           </ul>
+
+           <p class="footp">We provide cold drinks, phone charging services, power bank charging support, and gaming entertainment in a comfortable and customer-friendly environment.</p>
+         <br><br>
+        <div class="foot-head">
+            <h5 class="foot-head">Quick Links</h5>
+        </div>
+
+        <ul class="foot-lists">
+                <li><a class="B" href="index.html">Home</a></li>|
+                 <li><a class="B" href="About.html">About</a></li>|
+                  <li><a class="B" href="Service.html">Services</a></li>|
+                    <li><a class="B" href="Contact.html">Contact</a></li>|
+                   <li><a href="https://wa.me/2349045803384">Order on WhatsApp</a></li>
+            </ul>
+       <br>
+       <br>
+
+       <div class="foot-head">
+        <h5 class="foot-head">Customer Support</h5>
+       </div>
+       <p class="footp">For orders, product availability, charging service enquiries, and gaming session bookings, please contact us on WhatsApp. Our support team is available to assist you with confirming availability, preparing your order for pickup, and providing any information you may need before visiting Fin’s Limited Store.</p>
+       <br>
+       <br>
+       <div class="foot-head">
+        <h5 class="foot-head">Store Hours</h5>
+       </div>
+
+         <ul class="time">
+       <li>Monday-Friday: 8am-7pm</li>
+       <li>Saturday: Closed</li>
+       <li>Sunday: Closed</li>
+         </ul>
+        <br>
+        <br>
+         <div class="foot-head">
+        <h5 class="foot-head">Availability Notice</h5>
+         <p class="footp">Product availability, charging space, and gaming session slots may vary during the day. Please confirm availability through WhatsApp before visiting.</p>
+
+       <div class="down-foot">
+      <p class="downp">@Copy 2026 Fin’s Limited Store. All rights reserved.</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,800 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+
+
+body{
+background-image: url(https://wallpapercave.com/wp/wp14325355.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    background-color: darkgray;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 80px;
+}
+.nav-logo{
+    font-weight: 900;
+    font-size: 25px;
+}
+.nav-menu{
+    display: flex;
+    gap: 20px;
+}
+.nav-menu li{
+    list-style: none;
+}
+.nav-menu a{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.nav-menu a:hover{
+     color: white;
+}
+.order-btn .btn{
+    border-radius: 20px;
+    padding:10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.btn a{
+    color: black;
+}
+.btn:hover{
+    scale: 1.10;
+   background-color: gold;
+}
+.btn:active{
+    scale: 0.99;
+}
+.menu-btn{
+    display: none;
+    font-size: 35px;
+    font-weight: 600;
+    margin-right: 8px;
+    margin-top:6px;
+}
+
+/*-----------dropdown menu---------*/
+.nav-dropdown{
+    background:transparent;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    position:fixed;
+    right: 1px;
+    padding: 0 20px;
+    transition: 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    height: 0;
+    display: none;
+    border-radius: 20px;
+}
+.nav-dropdown.open{
+    height: 320px;
+}
+.nav-dropdown li{
+    line-height: 50px;
+    list-style: none;
+}
+.nav-dropdown li a{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    font-weight: 600;
+    color: black;
+}
+.nav-dropdown .B{
+    border-radius: 40px;
+}
+.nav-dropdown .B:hover{
+    background-color: white;
+     border: 1px solid black;
+}
+.nav-dropdown button{
+    text-align: center;
+    display: flex;
+    justify-content:center ;
+    margin: 20px 0;
+    border-radius: 40px;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    background: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+.nav-dropdown button a{
+    color: black;
+}
+.nav-dropdown button:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+/*-----------home page---------*/
+.greet{
+    padding: 5px;
+}
+.greet .well{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: "Playwrite NO", cursive;
+    font-size: 50px;
+}
+.greet .store{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 37px;
+    font-weight: 900;
+    margin-top: -10px;
+}
+.list{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/*-----------home img---------*/
+
+.home-img .A{
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.note{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.app img{
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-top: 25px;
+    margin: 20px;
+}
+.app img:hover{
+    scale: 1.07;
+}
+.app button{
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+}
+P.note2{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 6px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+/*-------Order section--------*/
+.order-on h1{
+    text-align: center;
+    font-weight: 800;
+    margin-top: 30px;
+    margin: 20px;
+    font-family:"Playwrite NO", cursive; 
+    font-size: 50px;
+}
+.drinks h1{
+     text-align: center;
+    font-weight: 800;
+    margin-top: 30px;
+    font-family:"Playwrite NO", cursive; 
+}
+.item-chart{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.item-chart .PB:hover{
+    scale: 1.2;
+}
+.item-chart .PB{
+    border: 1px solid black;
+    margin: 20px;
+    width: 101PX;
+    background-color: white;
+    border-radius: 20px;
+}
+.item-chart .pb{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+
+.imgpb{
+    border-radius: 15px;
+    padding: 2px;
+}
+.PB a{
+     border: 1px solid black;
+     background-color: white;
+     color: black;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     border-radius: 20px;
+     height: 40px;
+     margin: 10px;
+     font-weight: 600;
+     transition: 0.3s ease-in-out;
+}
+.PB a:hover{
+    scale: 1.09;
+    background-color: gold;
+}
+.PB a:active{
+    scale: 1;
+}
+
+
+.item-charttwo{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.item-charttwo .PA:hover{
+     scale: 1.2;
+}
+
+.item-charttwo .PA{
+    border: 1px solid black;
+    margin: 20px;
+    width: 101PX;
+    background-color: white;
+    border-radius: 20px;
+}
+.item-charttwo .pa{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+
+.imgpa{
+    border-radius: 15px;
+     padding: 2px;
+}
+.PA a{
+     border: 1px solid black;
+     background-color: white;
+     color: black;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     border-radius: 20px;
+     height: 40px;
+     margin: 10px;
+     font-weight: 600;
+     transition: 0.3s ease-in-out;
+}
+.PA a:hover{
+    scale: 1.09;
+    background-color: gold;
+}
+.PA a:active{
+    scale: 1;
+}
+
+
+
+.item-chartthree{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.item-chartthree .PE:hover{
+    scale: 1.2;
+}
+
+
+.item-chartthree .PE{
+    border: 1px solid black;
+    margin: 20px;
+    width: 101PX;
+    background-color: white;
+    border-radius: 20px;
+}
+.item-chartthree .pe{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+
+.imgpe{
+    border-radius: 15px;
+     padding: 2px;
+}
+.PE a{
+     border: 1px solid black;
+     background-color: white;
+     color: black;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     border-radius: 20px;
+     height: 40px;
+     margin: 10px;
+     font-weight: 600;
+     transition: 0.3s ease-in-out;
+}
+.PE a:hover{
+    scale: 1.09;
+    background-color: gold;
+}
+.PE a:active{
+    scale: 1;
+}
+
+
+
+.item-chartfour{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.item-chartfour .PG:hover{
+    scale: 1.2;
+}
+.item-chartfour .PG{
+    border: 1px solid black;
+    margin: 20px;
+    width: 101PX;
+    background-color: white;
+    border-radius: 20px;
+}
+.item-chartfour .pg{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+
+.imgpg{
+    border-radius: 15px;
+     padding: 2px;
+}
+.PG a{
+     border: 1px solid black;
+     background-color: white;
+     color: black;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     border-radius: 20px;
+     height: 40px;
+     margin: 10px;
+     font-weight: 600;
+     transition: 0.3s ease-in-out;
+}
+.PG a:hover{
+    scale: 1.09;
+    background-color: gold;
+}
+.PG a:active{
+    scale: 1;
+}
+
+
+
+.item-chartfive{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.item-chartfive .PH:hover{
+     scale: 1.2;
+}
+.item-chartfive .PH{
+    border: 1px solid black;
+    margin: 20px;
+    width: 101PX;
+    background-color: white;
+    border-radius: 20px;
+}
+.item-chartfive .ph{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+
+.imgph{
+    border-radius: 15px;
+     padding: 2px;
+}
+.PH a{
+     border: 1px solid black;
+     background-color: white;
+     color: black;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     border-radius: 20px;
+     height: 40px;
+     margin: 10px;
+     font-weight: 600;
+     transition: 0.3s ease-in-out;
+}
+.PH a:hover{
+    scale: 1.09;
+    background-color: gold;
+}
+.PH a:active{
+    scale: 1;
+}
+
+
+.item-chartsix{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.item-chartsix .PJ:hover{
+    scale: 1.2;
+}
+.item-chartsix .PJ{
+    border: 1px solid black;
+    margin: 20px;
+    width: 101PX;
+    background-color: white;
+    border-radius: 20px;
+}
+.item-chartsix .pj{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+
+.imgpj{
+    border-radius: 15px;
+     padding: 2px;
+}
+.PJ a{
+     border: 1px solid black;
+     background-color: white;
+     color: black;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     border-radius: 20px;
+     height: 40px;
+     margin: 10px;
+     font-weight: 600;
+     transition: 0.3s ease-in-out;
+}
+.PJ a:hover{
+    scale: 1.09;
+    background-color: gold;
+}
+.PJ a:active{
+    scale: 1;
+}
+
+
+.item-chartseven{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.item-chartseven .PK:hover{
+    scale: 1.2;
+}
+.item-chartseven .PK{
+    border: 1px solid black;
+    margin: 20px;
+    width: 101PX;
+    background-color: white;
+    border-radius: 20px;
+}
+.item-chartseven .pk{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+
+.imgpk{
+    border-radius: 15px;
+     padding: 2px;
+}
+.PK a{
+     border: 1px solid black;
+     background-color: white;
+     color: black;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     border-radius: 20px;
+     height: 40px;
+     margin: 10px;
+     font-weight: 600;
+     transition: 0.3s ease-in-out;
+}
+.PK a:hover{
+    scale: 1.09;
+    background-color: gold;
+}
+.PK a:active{
+    scale: 1;
+}
+
+
+.chsec{
+    border: 1px solid black;
+    margin-top: 15%;
+    background-color: white;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+
+.imgchsec{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: auto;
+    padding: 15px;
+}
+.pch{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cha{
+     border: 1px solid black;
+     background-color: white;
+     color: black;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     border-radius: 20px;
+     height: 40px;
+     margin: 30px;
+     font-weight: 600;
+     transition: 0.3s ease-in-out;
+}
+
+.cha:hover{
+    scale: 1.04;
+    background-color: gold;
+    }
+.cha:active{
+    scale: 1;
+}
+.support h3{
+    text-align: center;
+    font-weight: 800;
+    margin-top: 30px;
+    font-family:"Playwrite NO", cursive;
+}
+
+.apps{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 20px;
+}
+
+.apps img{
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-top: 25px;
+    margin: 10px;
+    transition: 0.3 ease-in-out;
+}
+.appsa:hover{
+    scale: 1.09;
+}
+.emoji{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+/*-------About section--------*/
+
+.offer{
+    margin-left: 25px;
+}
+.services li{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.services .trust{
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    font-weight: 600;
+
+}.abt-pic .A{
+     border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+/*-------Contact section--------*/
+
+.contact-info{
+    margin-left: 30px;
+}
+.wat{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+}
+.wat a{
+    color: black;
+    margin: 10px;
+}
+.contact-info i{
+    font-size: 30px;
+    transform: translateY(15%);
+}
+.wat a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.location{
+    padding:10px;
+    width: 100%;
+    
+}
+
+/*-------footer section--------*/
+
+
+.footer-bottom{
+    background-color: rgb(174, 174, 174);
+    height: 526px;
+    padding: 10px;
+    font-style: italic;
+    margin-top: 20%;
+}
+.foot-head{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.foot-list{
+    margin-left: 10px;
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.footp{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.foot-lists{
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    list-style: none;
+}
+.foot-lists a{
+    color: black;
+}
+.time li{
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+.down-foot{
+    margin-top:10%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 11px;
+}
+.downp{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------Responsive section--------*/
+
+@media (max-width:768px) {
+    .navbar .nav-menu{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .order-btn{
+        margin-left: 5%;
+    }
+    .nav-dropdown{
+        display: block;
+    }
+}
+
+
+
+
+

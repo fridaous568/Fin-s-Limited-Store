@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                Fin's Limited Store
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                 <li><a href="About.html">About</a></li>
+                  <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html">contact</a></li>
+            </ul>
+
+            <div class="order-btn">
+                <button class="btn" type="submit"><a href="order online.html" title="click here to place an order">Order Online</a></button>
+            </div>
+
+            <div class="menu-btn" id="menubtn" title="click here to open menu">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-----------dropdown menu--------->
+    <div>
+           <ul class="nav-dropdown" id="dropdown">
+                <li><a class="B" href="index.html">Home</a></li>
+                 <li><a class="B" href="About.html">About</a></li>
+                  <li><a class="B" href="Service.html">Services</a></li>
+                    <li><a class="B" href="Contact.html">Contact</a></li>
+                   <li><button type="submit" ><a href="https://wa.me/2349045803384">Order on WhatsApp</a></button></li>
+            </ul>
+    </div>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn');
+        const menubtnicon = document.querySelector('.menu-btn i');
+        const dropdown = document.querySelector('.nav-dropdown');
+        
+        menubtn.addEventListener('click', function () {
+
+            dropdown.classList.toggle('open');
+
+            const isOpen = dropdown.classList.contains('open');
+
+            menubtnicon.className = isOpen
+            ?'bx bx-x'
+            : 'bx bx-menu'
+
+            document.addEventListener("click", function (event) {
+
+    if (!dropdown.contains(event.target) &&
+        !menubtn.contains(event.target)) {
+
+        dropdown.classList.remove('open');
+        menubtnicon.className = 'bx bx-menu';
+
+    }
+
+});
+        });
+        </script>
+    
+<!----------- contact page--------->
+
+
+           <div class="contact-info">
+          <div class="drinks">
+       <h1>📞 Contact Information</h1>
+<hr>
+<br>
+
+      <div class="wat">
+          <ul>
+         <li ><i class='bx bxl-whatsapp' ></i> WhatsApp:<br>
+         <a class="wat" href="https://wa.me/2349045803384" title="click here to chat us on whatsApp">09045803384</a></li>
+      </div>
+
+<br>
+       <div class="wat">
+         <li class="wat"><i class='bx bxl-telegram' ></i> Telegram:<br> 09045803384</li>
+       </div>
+<br>
+
+        <div class="wat">
+          <li class="wat"><i class='bx bx-mobile-alt' ></i>Telephone:<br> 09045803384</li>
+        </div>
+<br>
+
+         <div class="wat">
+          <li class="wat"><i class='bx bx-envelope' ></i> Email:<br>
+         <a class="wat" href= "mailto:fridaousnasir1@gmail.com" title="send us an email">fridaousnasir1@gmail.com</a></li>
+         </div>
+          </div>
+          <br>
+         <div class="wat">
+         <li class="wat">📍 Location:
+         <p class="note">👇Click to view👇</p><br>
+        </ul>
+        </div>
+           </div>
+
+
+             <a class="location" href="https://maps.app.goo.gl/6ahVo72TcfiwoVBc8?g_st=it" title="Click to view Our Location"><img src="images/fins location.png" width="450" height="200"></a> </li>
+
+    </div> 
+           </div>
+
+    <footer class="footer-bottom">
+          <div class="foot-head">
+        <h5 class="foot-head">Fin's Limited Store</h5>
+        </div>
+
+        <ul class="foot-list">
+            <li>Reliable Service</li>
+            <li>Affordable Prices</li>
+            <li>Everyday Convenience</li>
+           </ul>
+
+           <p class="footp">We provide cold drinks, phone charging services, power bank charging support, and gaming entertainment in a comfortable and customer-friendly environment.</p>
+         <br><br>
+        <div class="foot-head">
+            <h5 class="foot-head">Quick Links</h5>
+        </div>
+
+        <ul class="foot-lists">
+                <li><a class="B" href="index.html">Home</a></li>|
+                 <li><a class="B" href="About.html">About</a></li>|
+                  <li><a class="B" href="Service.html">Services</a></li>|
+                    <li><a class="B" href="Contact.html">Contact</a></li>|
+                   <li><a href="https://wa.me/2349045803384">Order on WhatsApp</a></li>
+            </ul>
+       <br>
+       <br>
+
+       <div class="foot-head">
+        <h5 class="foot-head">Customer Support</h5>
+       </div>
+       <p class="footp">For orders, product availability, charging service enquiries, and gaming session bookings, please contact us on WhatsApp. Our support team is available to assist you with confirming availability, preparing your order for pickup, and providing any information you may need before visiting Fin’s Limited Store.</p>
+       <br>
+       <br>
+       <div class="foot-head">
+        <h5 class="foot-head">Store Hours</h5>
+       </div>
+
+         <ul class="time">
+       <li>Monday-Friday: 8am-7pm</li>
+       <li>Saturday: Closed</li>
+       <li>Sunday: Closed</li>
+         </ul>
+        <br>
+        <br>
+         <div class="foot-head">
+        <h5 class="foot-head">Availability Notice</h5>
+         <p class="footp">Product availability, charging space, and gaming session slots may vary during the day. Please confirm availability through WhatsApp before visiting.</p>
+
+       <div class="down-foot">
+      <p class="downp">@Copy 2026 Fin’s Limited Store. All rights reserved.</p>
+        </footer>
+</body>
+</html>

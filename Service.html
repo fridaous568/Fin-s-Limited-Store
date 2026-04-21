@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+        <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<html>
+<body>
+       <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                Fin's Limited Store
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                 <li><a href="About.html">About</a></li>
+                  <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+            <div class="order-btn">
+                <button class="btn" type="submit"><a href="order online.html" title="click here to view service">View services</a>
+            </div>
+
+
+            </div>
+
+            <div class="menu-btn" id="menubtn" title="click here to open menu">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-----------dropdown menu--------->
+    <div>
+           <ul class="nav-dropdown" id="dropdown">
+                <li><a class="B" href="index.html">Home</a></li>
+                 <li><a class="B" href="About.html">About</a></li>
+                  <li><a class="B" href="Service.html">Services</a></li>
+                    <li><a class="B" href="Contact.html">Contact</a></li>
+                   <li><button type="submit" ><a href="https://wa.me/2349045803384?text=Hello%2C%20Are%20you%20guys%20available%20for%20services%3F%3F">Order on WhatsApp</a></button></li>
+            </ul>
+    </div>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn');
+        const menubtnicon = document.querySelector('.menu-btn i');
+        const dropdown = document.querySelector('.nav-dropdown');
+        
+        menubtn.addEventListener('click', function () {
+
+            dropdown.classList.toggle('open');
+
+            const isOpen = dropdown.classList.contains('open');
+
+            menubtnicon.className = isOpen
+            ?'bx bx-x'
+            : 'bx bx-menu'
+
+            document.addEventListener("click", function (event) {
+
+    if (!dropdown.contains(event.target) &&
+        !menubtn.contains(event.target)) {
+
+        dropdown.classList.remove('open');
+        menubtnicon.className = 'bx bx-menu';
+
+    }
+
+});
+        });
+        </script>
+
+
+
+<!----------- Service page--------->
+         <div class="order-on">
+        <h1>Our Services</h1>
+        </div>
+
+        <div class="note">
+           <p class="note">At Fin’s Limited Store, we provide reliable everyday services designed to make your visit convenient, comfortable, and enjoyable. Whether you need device charging, refreshments, or entertainment, our services are available daily to support your needs.</p>
+        </div><hr>
+
+
+        <div class="drinks">
+        <h1>Cold Drinks & Refreshments 🥤</h1>
+        </div>
+        <p class="note">We provide a wide variety of cold drinks and refreshing beverages available throughout the day at affordable prices.
+           <br>
+           <br>
+           <b>Available options include:</b>
+            </p>
+        <div class="services">
+            <ul class="offer">
+        <li>Coca-Cola</li>
+        <li>Pepsi</li>
+        <li>Fanta</li>
+        <li>Can Malt</li>
+        <li>Chi Active</li>
+        <li>Chi Exotic</li>
+        <li>Pet Malt</li>
+        <li>Sprite</li>
+        <li>Fayrouz</li>
+        <li>Predator Energy Drink</li>
+        <li>Fearless Energy Drink</li>
+        <li>Yogurt drinks (Nutri Milk, Fresh Yo, Viju Yogurt, Dudu Yogurt)</li>
+        <li>Bottle water</li>
+    </ul>
+
+    <div class="abt-pic">
+        <img  class="A"  src="images/cold drinks.jpg" width="230" height="400">
+        <img class="A" src="images/photo_2_2026-02-26_14-22-27.jpg" width="220" height="400">
+    </div>
+
+        <p class="note">
+          <b>Note:</b>
+          Drink availability may change depending on stock.
+        </p></div><hr>
+
+
+           
+        <div class="drinks">
+        <h1>Phone Charging Service📱</h1>
+        </div>
+
+        <div class="note">
+           <p class="note">We provide fast and safe phone charging services for customers who need reliable power support during the day. Our charging stations are monitored to ensure your device remains secure while charging.</p>
+           
+            <div class="abt-pic">
+        <img class="A" src="images/photo_4_2026-02-26_14-22-27.jpg" width="300" height="450">
+    </div>
+        <br>
+           <b>Price:</b>
+        Phone charging — ₦150 per device<br>
+         <b>Note:</b>
+         Charging space may be limited during busy periods. Please confirm availability before arrival.</p>
+        </div><hr>
+
+         <div class="drinks">
+        <h1>Power bank Charging Service🔋</h1>
+        </div>
+
+        <div class="note">
+           <p class="note">We provide fast and safe power bank charging services for customers who need reliable power support during the day. Our charging stations are monitored to ensure your device remains secure while charging.</p>
+        <div class="abt-pic">
+        <img class="A" src="images/photo_1_2026-02-26_16-44-57.jpg" width="300" height="450">
+    </div>
+      <br>  
+           <b>Price:</b>
+        Power bank charging — ₦250 per Power Bank<br>
+         <b>Note:</b>
+         Charging space may be limited during busy periods. Please confirm availability before arrival.</p>
+        </div><hr>
+
+
+
+        <div class="drinks">
+        <h1>Gaming Entertainment 🎮</h1>
+        </div>
+        <div class="note">
+           <p class="note">Enjoy exciting gaming sessions in a comfortable and friendly environment. Our gaming setup is available for customers who want to relax, have fun, and enjoy quality entertainment during their visit.
+
+                Gaming sessions are available daily depending on availability.
+<br>
+           <div class="abt-pic">
+        <img class="A" src="images/photo_2026-02-26_14-52-02.jpg" width="220" height="350">
+        <img class="A" src="images/photo_2_2026-02-26_16-44-57.jpg" width="210" height="350">
+    </div><br>
+        <b>Important:</b>
+          Please confirm available time slots before arrival to avoid waiting</p>
+        </div><hr>
+        
+
+
+        <div class="drinks">
+        <h1>Availability Notice</h1>
+        </div>
+        <div class="note">
+           <p class="note">Drink availability, charging space, and gaming session slots may vary during the day depending on demand. Please confirm availability through WhatsApp before visiting Fin’s Limited Store to ensure faster service.</p>
+        </div><hr>
+
+        
+
+        <div class="drinks">
+        <h1>Quick Service Booking</h1>
+        </div>
+        <div class="note">
+           <p class="note">Need a service today?
+
+             Contact us on WhatsApp to confirm availability and prepare your service quickly before arrival. This helps reduce waiting time and ensures a smooth experience when you visit.
+             Contact Support on WhatsApp 💬
+           </p></div>
+           <a class="cha" href="https://wa.me/2349045803384?text=Hello%2C%20I%20want%20to%20place%20an%20order" title="click here to chat on whatsApp">Book Now</a>
+            </div><hr>
+
+
+            <div class="services">
+       <div class="drinks">
+    <h1>Why Customers Choose Fin’s Limited Store</h2>
+       </div>
+
+    <p class="trust">
+        Customers trust Fin’s Limited Store because we offer:
+    </p>
+
+    <ul class="offer">
+        <li>Quick and reliable charging services ⚡</li>
+        <li>Affordable beverage options 🥤</li>
+        <li>Comfortable gaming experience 🎮</li>
+        <li>Friendly and helpful customer support 🤝</li>
+        <li>Convenient and accessible location 📍</li>
+    </ul>
+<br>
+    <p class="note">
+        We continuously work to improve our services and provide the best experience possible for every customer.
+    </p>
+      </div><hr>
+
+
+      <footer class="footer-bottom">
+          <div class="foot-head">
+        <h5 class="foot-head">Fin's Limited Store</h5>
+        </div>
+
+        <ul class="foot-list">
+            <li>Reliable Service</li>
+            <li>Affordable Prices</li>
+            <li>Everyday Convenience</li>
+           </ul>
+
+           <p class="footp">We provide cold drinks, phone charging services, power bank charging support, and gaming entertainment in a comfortable and customer-friendly environment.</p>
+         <br><br>
+        <div class="foot-head">
+            <h5 class="foot-head">Quick Links</h5>
+        </div>
+
+        <ul class="foot-lists">
+                <li><a class="B" href="index.html">Home</a></li>|
+                 <li><a class="B" href="About.html">About</a></li>|
+                  <li><a class="B" href="Service.html">Services</a></li>|
+                    <li><a class="B" href="Contact.html">Contact</a></li>|
+                   <li><a href="https://wa.me/2349045803384">Order on WhatsApp</a></li>
+            </ul>
+       <br>
+       <br>
+
+       <div class="foot-head">
+        <h5 class="foot-head">Customer Support</h5>
+       </div>
+       <p class="footp">For orders, product availability, charging service enquiries, and gaming session bookings, please contact us on WhatsApp. Our support team is available to assist you with confirming availability, preparing your order for pickup, and providing any information you may need before visiting Fin’s Limited Store.</p>
+       <br>
+       <br>
+       <div class="foot-head">
+        <h5 class="foot-head">Store Hours</h5>
+       </div>
+
+         <ul class="time">
+       <li>Monday-Friday: 8am-7pm</li>
+       <li>Saturday: Closed</li>
+       <li>Sunday: Closed</li>
+         </ul>
+        <br>
+        <br>
+         <div class="foot-head">
+        <h5 class="foot-head">Availability Notice</h5>
+         <p class="footp">Product availability, charging space, and gaming session slots may vary during the day. Please confirm availability through WhatsApp before visiting.</p>
+
+       <div class="down-foot">
+      <p class="downp">@Copy 2026 Fin’s Limited Store. All rights reserved.</p>
+        </footer>
+</body>
+</html>

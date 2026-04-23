@@ -807,8 +807,39 @@ P.note2{
         display: block;
     }
 }
-
-
+@media (max-width:412px) {
+    .navbar{
+        width: 100%;
+    }
+    .item-chart{
+        margin-right: 300px;
+    
+    }
+    .imgchsec{
+        width: 300px;
+    }
+    .item-charttwo .PA{
+        margin:5px;
+    }
+    .item-chartthree .PE{
+        margin: 5PX;
+    }
+    .item-chartfour .PG{
+        margin: 5px;
+    }
+    .item-chartfive .PH{
+          margin: 5px;
+    }
+    .item-chartsix .PJ{
+          margin: 5px;
+    }
+    .item-chartseven .PK{
+          margin: 5px;
+    }
+    .item-chart .PB{
+          margin: 11px;
+    }
+}
 
 
 
